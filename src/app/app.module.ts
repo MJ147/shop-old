@@ -1,3 +1,4 @@
+import { ImportMaterialModule } from './import-material/import-material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -22,11 +23,12 @@ import { StarsComponent } from './component/stars/stars.component';
     ProductItemComponent,
     ProductDetailComponent,
     SearchComponent,
-    StarsComponent
+    StarsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ImportMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

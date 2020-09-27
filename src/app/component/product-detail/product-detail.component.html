@@ -1,1 +1,11 @@
-<p>product-detail works!</p>
+<div class="thumbnail">
+    <img src="https://via.placeholder.com/820x320">
+    <div>
+        <h4 class="float-right">{{ product.price }}</h4>
+        <h4>{{ product.title }}</h4>
+        <p>{{ product.description }}</p>
+    </div>
+    <div class="ratings">
+        <p><app-stars [rating]="product.rating"></app-stars></p>
+    </div>
+</div>
